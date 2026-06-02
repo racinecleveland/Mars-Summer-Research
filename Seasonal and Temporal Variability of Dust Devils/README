@@ -1,0 +1,71 @@
+This student will investigate how dust devil activity changes throughout the Martian year at Jezero Crater. Using the full vortex catalog and associated solar longitude (Ls) values, they will analyze trends in detection frequency, vortex strength, and occurrence timing. They will create figures showing how dust devil activity varies with season and local time, identify periods of increased or decreased activity, and compare their results with previous observations from other Mars missions. Through this work, the student will gain experience in planetary climatology, statistical analysis, and scientific visualization while contributing to our understanding of seasonal atmospheric processes on Mars.
+Seasonal Behavior of Dust Devils
+Big Question
+"When are dust devils most active during the Martian year?"
+This works with the full catalog.
+
+Week 1
+Learn:
+Martian seasons
+Ls
+Jezero crater location
+Dust devil formation
+Create:
+Martian calendar cheat sheet.
+
+Week 2
+Explore catalog.
+Questions:
+What variables exist?
+How many detections?
+What is Ls?
+Produce:
+Summary table.
+
+Week 3
+Create basic plots.
+Examples:
+Detections versus Ls
+Detections versus local time
+Learn:
+Histograms
+Scatter plots
+Moving averages
+
+Week 4
+Seasonal analysis.
+Questions:
+Are there active seasons?
+Are there quiet seasons?
+Plot:
+Vortices per sol versus Ls.
+
+Week 5
+Strength analysis.
+Questions:
+Do stronger vortices occur during certain seasons?
+Plot:
+Median DeltaP versus Ls.
+
+Week 6
+Local time analysis.
+Questions:
+Morning?
+Afternoon?
+Evening?
+Plot:
+Detection frequency by hour.
+
+Week 7
+Literature comparison.
+Compare to:
+Viking
+Pathfinder
+Curiosity
+Published Perseverance studies
+
+Week 8
+Deliverable
+Poster section:
+Seasonal evolution of vortex activity.
+
