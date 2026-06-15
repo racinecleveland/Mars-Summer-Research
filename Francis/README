@@ -1,0 +1,89 @@
+This student will focus on evaluating the quality and reliability of the existing dust devil detection catalog generated from Perseverance MEDA pressure data. Rather than reviewing all ~4,000 detections, they will examine a representative subset spanning different seasons, times of day, and vortex strengths to learn how real dust devil signatures appear in the pressure record. Using visualization tools and the existing detection workflow, they will classify detections into confidence categories, identify common false positives, and develop recommendations for catalog filtering. Their work will provide an assessment of detection reliability and establish quality-control procedures that can be applied to the full dataset, ensuring that subsequent scientific analyses are based on robust vortex detections.
+
+Vortex Catalog Quality Control
+Big Question
+"How reliable are our dust devil detections?"
+The job is not to find new dust devils. Their job is to understand what a real dust devil looks like in the pressure data.
+
+Week 1
+Learn
+What is a dust devil?
+Why does pressure drop?
+What does a vortex look like in pressure data?
+What is MEDA?
+Activities
+Read:
+MEDA instrument paper
+One Perseverance dust devil paper
+
+Download Anaconda Navigator
+Connect to muldoon code
+Connect to Racine’s code
+Connect to Vortex Catalog Quality Control git hub folder
+
+Week 2
+Learn the Dataset
+Open actual MEDA pressure files.
+Plot:
+Pressure versus time
+One sol at a time
+Questions:
+What does noise look like?
+What does a pressure dip look like?
+Deliverable:
+A notebook containing 20 manually identified pressure events.
+
+Week 3
+Learn Muldoon Outputs
+Explain:
+Detrending
+Matched filters
+Detection thresholds
+Show:
+Raw pressure
+Detrended pressure
+Detection marker
+Have them inspect:
+50 detections
+Create categories:
+Category
+Meaning
+A
+Clear vortex
+B
+Probable vortex
+C
+Questionable
+D
+Likely false positive
+
+
+Week 4-5
+Formal Quality Control
+Review:
+200-300 detections
+Record:
+Sol
+Ls
+DeltaP
+Gamma
+Classification
+Look for:
+Common failure modes
+Noisy periods
+Overlapping detections
+
+Week 6-7
+Statistics
+Questions:
+Are weak detections less reliable?
+Are large detections usually real?
+Does confidence vary with season?
+Create plots.
+
+Week 8
+Deliverable
+A QC report.
+Potential figure:
+Detection confidence versus pressure drop.
+
