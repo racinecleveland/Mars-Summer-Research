@@ -284,9 +284,9 @@ def get_RDS_data(sol, data_dir="../data/data_calibrated_env/"):
     RDS_data_file = data_dir +\
             "sol_*%i/WE*%i*RDS*.CSV" %\
             (sol, sol)
-    
+    # print(RDS_data_file)
     filename = glob(RDS_data_file)[0]
-    
+    # print(filename)
     RDS_data = np.genfromtxt(filename, delimiter=',', 
             names=True, dtype=None)
     time = make_seconds_since_midnight(filename)

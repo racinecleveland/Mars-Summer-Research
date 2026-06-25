@@ -282,8 +282,9 @@ def get_RDS_data(sol, data_dir="../data/data_calibrated_env/"):
     """
 
     RDS_data_file = data_dir +\
-            "sol_*%i/WE__*%i___________CAL_RDS_________________P01.CSV" %\
+            "sol_%i/WE__%i___________CAL_RDS_________________P01.CSV" %\
             (sol, sol)
+    print(RDS_data_file)
     filename = glob(RDS_data_file)[0]
     RDS_data = np.genfromtxt(filename, delimiter=',', 
             names=True, dtype=None)
