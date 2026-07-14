@@ -269,7 +269,7 @@ def how_much_of_the_hour_observed(filename, hour_edges=None):
 
     return hour_edges, how_many_hours_per_hour
 
-def get_RDS_data(sol, data_dir="../data/data_calibrated_env/"):
+def get_RDS_data(sol,  RDS_data_file, data_dir="../data/data_calibrated_env/"):
     """
     Returns the time in LTST and RDS dataset for a given sol
 
@@ -280,10 +280,11 @@ def get_RDS_data(sol, data_dir="../data/data_calibrated_env/"):
     Returns:
         time, RDS_data
     """
-
-    RDS_data_file = data_dir +\
-            "sol_*%i/WE*%i*RDS*.CSV" %\
-            (sol, sol)
+    ### i commented out because was giving issues, I inputted the data file directly (RDS_data_file)
+    ### see: def get_RDS_data(sol,  RDS_data_file, data_dir="../data/data_calibrated_env/"):
+    # RDS_data_file = data_dir +\
+    #         "sol_*%i/WE*%i*RDS*.CSV" %\ 
+    #         (sol, sol)
     
     filename = glob(RDS_data_file)[0]
     
