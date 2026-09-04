@@ -269,25 +269,30 @@ def how_much_of_the_hour_observed(filename, hour_edges=None):
 
     return hour_edges, how_many_hours_per_hour
 
-def get_RDS_data(sol, data_dir="../data/data_calibrated_env/"):
+def get_RDS_data(sol, data_dir="D:/rds_data/"):
     """
-    Returns the time in LTST and RDS dataset for a given sol
+    Returns the time in LTST and RDS dataset for a given sol.
 
     Args:
         sol (int): desired sol
-        data_dir (str): path to files
+        data_dir (str): path to RDS files
 
     Returns:
         time, RDS_data
     """
 
     RDS_data_file = data_dir +\
-            "sol_%i/WE__%i___________CAL_RDS_________________P01.CSV" %\
-            (sol, sol)
-    print(RDS_data_file)
+            "WE__%04i___________CAL_RDS_________________P*.CSV" % sol
+
     filename = glob(RDS_data_file)[0]
-    RDS_data = np.genfromtxt(filename, delimiter=',', 
-            names=True, dtype=None)
+
+    RDS_data = np.genfromtxt(
+        filename,
+        delimiter=',',
+        names=True,
+        dtype=None
+    )
+
     time = make_seconds_since_midnight(filename)
 
     return time, RDS_data
